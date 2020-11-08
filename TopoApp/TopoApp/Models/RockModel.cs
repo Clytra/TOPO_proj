@@ -17,5 +17,6 @@ namespace TopoApp.Models
         public bool ChildrenFriendly { get; set; }
         public LineString RockLoc { get; set; }
         public SectorModel Sector { get; set; }
+        public ICollection<ClimbingRouteModel> ClimbingRoutes { get; set; }
     }
 }
