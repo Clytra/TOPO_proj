@@ -16,6 +16,6 @@ namespace TopoApp.Models
         public double MaxHight { get; set; }
         public bool ChildrenFriendly { get; set; }
         public LineString RockLoc { get; set; }
-        public RegionModel Region { get; set; }
+        public SectorModel Sector { get; set; }
     }
 }
