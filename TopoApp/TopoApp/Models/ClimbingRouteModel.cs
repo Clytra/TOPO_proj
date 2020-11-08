@@ -1,8 +1,5 @@
 ﻿using NetTopologySuite.Geometries;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace TopoApp.Models
 {
@@ -14,8 +11,8 @@ namespace TopoApp.Models
         public string Assurance { get; set; }
         public double Rating { get; set; }
         public string Author { get; set; }
-        public DateTime YearFrom { get; set; }
-        public DateTime YearTo { get; set; }
+        public int YearFrom { get; set; }
+        public int YearTo { get; set; }
         public double Length { get; set; }
         public Point ClimbingRouteLoc { get; set; }
         public RockModel Rock { get; set; }
