@@ -12,5 +12,6 @@ namespace TopoApp.Models
         public string AreaName { get; set; }
 
         public Polygon AreaLoc { get; set; }
+        public ICollection<RegionModel> Regions { get;set }
     }
 }
