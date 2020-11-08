@@ -1,0 +1,9 @@
+﻿@model IEnumerable<AreaModel>
+
+@foreach(var p in Model)
+{
+    <div>
+        <h3>@p.AreaName</h3>
+        @p.Regions
+    </div>
+}
