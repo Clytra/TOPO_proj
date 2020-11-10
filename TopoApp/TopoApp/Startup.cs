@@ -40,10 +40,9 @@ namespace TopoApp
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=ClimbingRoute}/{action=List}/{id?}");
             });
         }
     }
