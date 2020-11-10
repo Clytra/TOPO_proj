@@ -3,7 +3,29 @@
 @foreach(var p in Model)
 {
     <div>
-        <h3>@p.AreaName</h3>
-        @p.Regions
+        <h1>@p.AreaName</h1>
+        @foreach(var reg in p.Regions)
+        {
+            <h2>@reg.RegionName</h2>
+            foreach(var sec in reg.Sectors)
+            {
+                <h3>@sec.SectorName</h3>
+                foreach(var rock in sec.Rocks)
+                {
+                    <h4>@rock.RockName</h4>
+                    foreach(var route in rock.ClimbingRoutes)
+                    {
+                        <ul>
+                            <li>@route.ClimbingRouteName</li>
+                            <li>@route.ClimbingGrade</li>
+                            <li>@route.Assurance</li>
+                            <li>@route.Author</li>
+                            <li>@route.YearFrom</li>
+                            <li>@route.Length</li>
+                        </ul>
+                    }
+                }
+            }
+        }
     </div>
 }
