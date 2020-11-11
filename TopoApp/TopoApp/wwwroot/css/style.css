@@ -9,7 +9,7 @@
 /* Określenie właściwości globalnych */
 
 html {
-    font-family: 'Space Grotesk', arial, sans-serif;
+    font-family: 'Montserrat', 'arial', sans-serif;
     font-size: 10px;
     /* do wykorzystania w jednostkach rem w innych elementach*/
     color: #503631;

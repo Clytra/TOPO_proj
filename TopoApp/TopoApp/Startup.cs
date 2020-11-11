@@ -42,7 +42,7 @@ namespace TopoApp
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=ClimbingRoute}/{action=List}/{id?}");
+                    pattern: "{controller=ClimbingRoute}/{action=Index}/{id?}");
             });
         }
     }

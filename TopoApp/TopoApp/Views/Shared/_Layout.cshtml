@@ -9,11 +9,11 @@
     <title>Baza TOPO</title>
     <meta name="description" content="Baza TOPO dróg wspinaczkowych">
 
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
+    @*<link rel="stylesheet"
           asp-href-include="bootstrap/dist/**/*.min.css"
-          asp-href-exclude="**/*-reboot*,**/*-grid*" />
+          asp-href-exclude="**/*-reboot*,**/*-grid*" />*@
     <meta name='keywords' content='topo, wspinanie, wspinaczka'>
 
     <!--   32 x 32 W tym przypadku w folderze głównym -->
@@ -21,8 +21,20 @@
     <link rel="icon" href="favicon.png">
 </head>
 <body>
-    <div>
-        @RenderBody()
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Zaloguj się</a></li>
+            <li><a href="#">Rejestracja</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Baza TOPO dróg wspinaczkowych</h1>
+    </header>
+    <main>
+        @RenderBody();
+    </main>
+    <footer>
+        <p>&copy; Baza TOPO</p>
+    </footer>
 </body>
 </html>
