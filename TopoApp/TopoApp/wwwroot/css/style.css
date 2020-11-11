@@ -3,15 +3,117 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 /* Określenie właściwości globalnych */
 
 html {
-    font-family: 'Montserrat', 'arial', sans-serif;
     font-size: 10px;
+    font-family: 'Montserrat', 'arial', sans-serif;
     /* do wykorzystania w jednostkach rem w innych elementach*/
     color: #503631;
+    background-color: rgb(32, 32, 32);
     /* jeśli nie chcemy by czarny był głównym kolorem */
 }
+
+/* Nawigacja */
+
+nav {
+    width: 90%;
+    max-width: 1440px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: right;
+}
+
+    nav ul {
+        list-style: none;
+    }
+
+        nav ul li {
+            display: inline-block;
+            width: 20%;
+        }
+
+            nav ul li a.account {
+                display: block;
+                font-size: 1.8rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 10px 30px;
+                margin-right: 50px;
+                margin-left: 80px;
+                transition: .2s;
+            }
+
+                nav ul li a.account:hover {
+                    background-color: azure;
+                    color: #eee;
+                    border-radius: 20px;
+                }
+
+/*Header */
+
+header {
+    height: 40vh;
+    background-color: aqua;
+}
+
+    header h1 {
+        font-size: 6rem;
+        color: aquamarine;
+        text-align: center;
+        line-height: 40vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+/* Main */
+
+main {
+    max-width: 1440px;
+    margin: 5vh auto;
+    font-size: 0;
+}
+
+    main p.description {
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 0 30px 50px 30px;
+        line-height: 180%;
+    }
+
+    main div.choosewrapper {
+        display: inline-block;
+        width: 15.33%;
+    }
+
+    main div.image {
+        height: 200px;
+        background-color: royalblue;
+        margin: 20px 30px;
+    }
+
+        main div.image:hover {
+            background-color: aliceblue;
+        }
+
+    main h2 {
+        font-size: 2rem;
+        text-align: center;
+        color: #222;
+    }
+
+/* Stopka*/
+
+footer {
+    background-color: #000;
+}
+
+    footer p {
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 2rem;
+    }
