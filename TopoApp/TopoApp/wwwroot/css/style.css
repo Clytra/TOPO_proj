@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 
 /* Określenie właściwości globalnych */
@@ -11,46 +10,58 @@
 html {
     font-size: 10px;
     font-family: 'Montserrat', 'arial', sans-serif;
-    /* do wykorzystania w jednostkach rem w innych elementach*/
-    color: #503631;
-    background-color: rgb(32, 32, 32);
-    /* jeśli nie chcemy by czarny był głównym kolorem */
+    color: #F5C031;
+    background-color: rgb(59, 41, 41);
 }
 
 /* Nawigacja */
 
 nav {
-    width: 90%;
-    max-width: 1440px;
-    margin: 30px auto;
-    padding: 0 20px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(55, 36, 36, 0.8382703423166141) 100%, rgba(0, 212, 255, 1) 100%);
     text-align: right;
 }
 
+    nav.clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    nav div.logo {
+        width: 20%;
+        margin-right: 10%;
+        height: 40px;
+        float: left;
+    }
+
     nav ul {
+        width: 70%;
+        height: 40px;
         list-style: none;
+        float: left;
     }
 
         nav ul li {
-            display: inline-block;
-            width: 20%;
+            float: right;
+            width: 10%;
         }
 
             nav ul li a.account {
                 display: block;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
+                text-align: left;
                 text-decoration: none;
                 text-transform: uppercase;
+                line-height: 40px;
                 letter-spacing: 1px;
-                padding: 10px 30px;
-                margin-right: 50px;
-                margin-left: 80px;
-                transition: .2s;
+                padding: 10px;
+                transition: .30s;
             }
 
                 nav ul li a.account:hover {
-                    background-color: azure;
                     color: #eee;
+                    border: 1px solid #F5C031;
                     border-radius: 20px;
                 }
 
@@ -58,15 +69,13 @@ nav {
 
 header {
     height: 40vh;
-    background-color: aqua;
+    background-image: url(../img/rocks_1920x400.jpg);
 }
 
     header h1 {
-        font-size: 6rem;
-        color: aquamarine;
+        font-size: 4rem;
         text-align: center;
-        line-height: 40vh;
-        background-color: rgba(0, 0, 0, 0.5);
+        line-height: 30vh;
     }
 
 /* Main */
@@ -74,7 +83,6 @@ header {
 main {
     max-width: 1440px;
     margin: 5vh auto;
-    font-size: 0;
 }
 
     main p.description {
@@ -84,9 +92,9 @@ main {
         line-height: 180%;
     }
 
-    main div.choosewrapper {
+    main div.feature {
         display: inline-block;
-        width: 15.33%;
+        width: 33.33%;
     }
 
     main div.image {
@@ -102,7 +110,6 @@ main {
     main h2 {
         font-size: 2rem;
         text-align: center;
-        color: #222;
     }
 
 /* Stopka*/
@@ -112,7 +119,6 @@ footer {
 }
 
     footer p {
-        color: white;
         text-align: center;
         padding: 2rem 0;
         font-size: 2rem;
