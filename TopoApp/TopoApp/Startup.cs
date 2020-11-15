@@ -15,12 +15,17 @@ namespace TopoApp
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration) => Configuration = configuration;
-        public IConfiguration Configuration { get; }
+        protected IConfigurationRoot Configuration { get; }
+        public Startup()
+        {
+            var configurationBuilder = new ConfigurationBuilder();
+            configurationBuilder.AddJsonFile("appsettings.json");
+            Configuration = configurationBuilder.Build();
+        }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration["Data:ClimbingRoutes:ConnectionString"]));
+            options.UseSqlServer(Configuration["ConnectionString"]));
             services.AddTransient<IClimbingRepository, EFClimbingRepository>();
             services.AddMvc();
         }
