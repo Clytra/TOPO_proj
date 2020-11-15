@@ -1,10 +1,12 @@
 ﻿using NetTopologySuite.Geometries;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace TopoApp.Models
 {
     public class ClimbingRouteModel
     {
+        [Key]
         public int ClimbingRouteID { get; set; }
         public string ClimbingRouteName { get; set; }
         public string ClimbingGrade { get; set; }

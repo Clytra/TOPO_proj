@@ -25,7 +25,7 @@ namespace TopoApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionString"]));
+            options.UseSqlServer(Configuration["ConnectionString"], x => x.UseNetTopologySuite()));
             services.AddTransient<IClimbingRepository, EFClimbingRepository>();
             services.AddMvc();
         }

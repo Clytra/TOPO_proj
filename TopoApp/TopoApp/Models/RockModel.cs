@@ -1,10 +1,12 @@
 ﻿using NetTopologySuite.Geometries;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TopoApp.Models
 {
     public class RockModel
     {
+        [Key]
         public int RockID { get; set; }
         public string RockName { get; set; }
         public string RockType { get; set; }
