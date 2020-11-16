@@ -9,7 +9,6 @@ namespace TopoApp.Models
         [Key]
         public int SectorID { get; set; }
         public string SectorName { get; set; }
-        public Polygon SectorLoc { get; set; }
         public RegionModel Region { get; set; }
         public ICollection<RockModel> Rocks { get; set; }
     }

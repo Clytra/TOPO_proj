@@ -20,7 +20,7 @@ namespace TopoApp.Models
         public IQueryable<SectorModel> Sectors => new List<SectorModel>
         {
             new SectorModel {SectorID = 1, SectorName = "Czarcie Wrota", 
-                SectorLoc = null, Rocks = Rocks.ToList()}
+                Rocks = Rocks.ToList()}
         }.AsQueryable<SectorModel>();
 
         public IQueryable<RockModel> Rocks => new List<RockModel>
@@ -33,7 +33,7 @@ namespace TopoApp.Models
         public IQueryable<ClimbingRouteModel> ClimbingRoutes => new List<ClimbingRouteModel>
         {
             new ClimbingRouteModel {ClimbingRouteID = 1, ClimbingRouteName = "Rysa Kurtyki",
-                ClimbingRouteLoc = null, ClimbingGrade = "VI.2+", Assurance = "8r + ST",
+                ClimbingGrade = "VI.2+", Assurance = "8r + ST",
                 Author = "B. Kaleta", YearFrom = 1986, Length = 18}
         }.AsQueryable<ClimbingRouteModel>();
     }

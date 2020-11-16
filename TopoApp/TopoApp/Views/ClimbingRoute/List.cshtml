@@ -4,7 +4,8 @@
 {
     <div>
         <h1>@p.AreaName</h1>
-        @foreach(var reg in p.Regions)
+        @*<p>@p.AreaLoc.ToString()</p>*@
+        @*@foreach(var reg in p.Regions)
         {
             <h2>@reg.RegionName</h2>
             foreach(var sec in reg.Sectors)
@@ -25,7 +26,7 @@
                         </ul>
                     }
                 }
-            }
-        }
+            }*@
+        @*}*@
     </div>
 }

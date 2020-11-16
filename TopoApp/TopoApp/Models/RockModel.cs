@@ -14,7 +14,7 @@ namespace TopoApp.Models
         public double MinHight { get; set; }
         public double MaxHight { get; set; }
         public bool ChildrenFriendly { get; set; }
-        public LineString RockLoc { get; set; }
+        public Point RockLoc { get; set; }
         public SectorModel Sector { get; set; }
         public ICollection<ClimbingRouteModel> ClimbingRoutes { get; set; }
     }

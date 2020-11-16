@@ -9,7 +9,7 @@ namespace TopoApp.Models
         [Key]
         public int RegionID { get; set; }
         public string RegionName { get; set; }
-        public Polygon RegionLoc { get; set; }
+        public Geometry RegionLoc { get; set; }
         public AreaModel Area { get; set; }
         public ICollection<SectorModel> Sectors { get; set; }
     }
