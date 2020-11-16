@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
-
-<html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +8,13 @@
     <title>Baza TOPO</title>
     <meta name="description" content="Baza TOPO dróg wspinaczkowych">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    @*<link rel="stylesheet"
-          asp-href-include="bootstrap/dist/**/*.min.css"
-          asp-href-exclude="**/*-reboot*,**/*-grid*" />*@
-    <meta name='keywords' content='topo, wspinanie, wspinaczka'>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 
-    <!--   32 x 32 W tym przypadku w folderze głównym -->
-    <!--  Dodać też (dla starych przeglądarek) favicon.ico w rozmiarze 16x16 też w katalogu głównym -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
+    <meta name='keywords' content='topo, wspinanie, wspinaczka'>
     <link rel="icon" href="favicon.png">
 </head>
 <body>
@@ -27,14 +24,15 @@
             <li><a href="#" class="account">Rejestracja</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>Baza TOPO dróg wspinaczkowych</h1>
-    </header>
     <main>
         @RenderBody();
     </main>
     <footer>
         <p>&copy; Baza TOPO</p>
     </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
