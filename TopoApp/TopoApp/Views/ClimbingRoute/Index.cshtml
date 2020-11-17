@@ -1,17 +1,78 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-<header>
-    <h1>Baza TOPO dróg wspinaczkowych</h1>
-</header>
-<p class="description">Jeszcze do końca nie wiem co tutaj napisać, ale w skrócie chodzi o to, że ta strona ma zapewnić dostęp do bazy TOPO, z którą - o ile się zdąży kupić wydanie książkowe - wcale nie jest tak różowo w Polsce ;) .</p>
-<section class="choosewrapper">
-    <div class="byfilters">
-        <div class="feature"></div>
-        <h2><a asp-controller="ClimbingRoute" asp-action="List">Jura Krakowsko-Częstochowska</a></h2>
+<div id="wrapper">
+    <div id="header" class="content-block header-wrapper">
+        <div class="header-wrapper-inner">
+            <section class="center">
+                <div class="slogan">
+                    &copy; Baza TOPO
+                </div>
+                <div class="secondary-slogan">
+                    Drogi wspinaczkowe ;)
+                </div>
+            </section>
+            <section class="bottom">
+                <a id="scrollToContent" href="#">
+                    <img src="img/arrow_down.png">
+                </a>
+            </section>
+        </div>
     </div>
-    <div class="feature">
-        <div class="image"></div>
-        <h2></h2>
+</div>
+<div class="content-block" id="portfolio">
+    <div class="container">
+        <header class="block-heading cleafix">
+            <a href="#" class="btn btn-o btn-lg pull-right">View All</a>
+            <h1>Jeszcze do końca nie wiem co tutaj napisać, ale w skrócie chodzi o to, że ta strona ma zapewnić dostęp do bazy TOPO, z którą - o ile się zdąży kupić wydanie książkowe - wcale nie jest tak różowo w Polsce ;) .</h1>
+            <p>Take a look at some of our recent products</p>
+        </header>
+        <section class="block-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#" class="recent-work" style="background-image: url(img/rain_1-320x240.jpg)">
+                        <span class="btn btn-o-white">Lorem Rocks</span>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="recent-work" style="background-image: url(img/min_icons_thumb1-320x240.jpg)">
+                        <span class="btn btn-o-white">Lorem Rocks</span>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="recent-work" style="background-image: url(img/flat_icons_thumb.jpg)">
+                        <span class="btn btn-o-white">Lorem Rocks</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#" class="recent-work" style="background-image: url(img/wood-320x240.jpg)">
+                        <span class="btn btn-o-white">Lorem Rocks</span>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="recent-work" style="background-image: url(img/bike-320x240.jpg)">
+                        <span class="btn btn-o-white">Lorem Rocks</span>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="recent-work" style="background-image: url(img/six_1-320x240.jpg)">
+                        <span class="btn btn-o-white">Lorem Rocks</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
+</div>
+  
+    @*<section class="choosewrapper">
+        <div class="byfilters">
+            <div class="feature"></div>
+            <h2><a asp-controller="ClimbingRoute" asp-action="List">Jura Krakowsko-Częstochowska</a></h2>
+        </div>
+        <div class="feature">
+            <div class="image"></div>
+            <h2></h2>
+        </div>
+    </section>*@
